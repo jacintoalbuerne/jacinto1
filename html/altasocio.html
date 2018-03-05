@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cultural y Deportiva Leonesa</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Jacinto González">
+	<meta name="equipo de futbol" content="futbol, leonesa, cultu, cultural">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logo_cultural.png">
+	<link rel="stylesheet" href="../css/estiloj.css" type="text/css">
+	<script type="text/javascript" src="../js/cultuscrip.js"></script>
+</head>
+
+<body>
+	<header>
+		<div>
+			<img src="../images/logo_cultural.png" width="70" alt="logotipo del club" id="logo"><h1>Cultural Y Deportiva Leonesa</h1>
+		</div>
+	</header>
+
+	<hr size="5" color=##D480E1>
+
+	<section id=precios>
+		<img src="../images/precios.jpg" alt="Esquema del campo, con la localización de los abonos" id="precio1">
+
+	</section>
+
+	
+
+	<aside>
+
+
+	<form action="altasocio.html" name="formulario" method="get" target="_blank" onsubmit="return validaForm()">
+			<h2>Localización del abono</h2>
+			
+		<fieldset id="abono">
+			<legend id="leyenda"><b>Clase de Localidad</b></legend>
+
+			<input type="radio" name="lugar" value="Preferencia_Este">
+		<label for="peste" id="abonok">Preferencia Este</label><br>
+			<input type="radio" name="lugar" value="Preferencia_Oeste">
+		<label for="poeste" id="abonok">Preferencia Oeste</label><br>
+			<input type="radio" name="lugar" value="Fondo_Sur">
+		<label for="Sur" id="abonok">Fondo Sur</label><br>
+			<input type="radio" name="lugar" value="Fondo_Norte">
+		<label for="Norte" id="abonok">Fondo Norte</label><br>
+			<input type="radio" name="lugar" value="Palco">
+		<label for="palco" id="abonok">Palco</label><br>
+			<input type="radio" name="lugar" value="Tribuna_Este">
+		<label for="teste" id="abonok">Tribuna Este</label><br>
+			<input type="radio" name="lugar" value="Tribuna_Oeste">
+		<label for="toeste" id="abonok">Tribuna Oeste</label><br>	
+			<input type="radio" name="lugar" value="flexible">
+		<label for="flexible" id="abonok">Flexible</label><br>
+			<p class="aviso" id="aviso0"></p>
+
+		</fieldset>
+
+		<fieldset id="abono1">
+
+			<legend id="leyenda"><b>Socio</b></legend>
+				<label for="socio" id="socioL">Tipo de socio</label>
+					<select class="pregunta" name="socio" id="socioS">
+						<option value=""></option>
+						<option value="escuelas_Deportivas">Escuelas Deportivas</option>
+						<option value="junior">Junior</option>	
+						<option value="jupiter">Jupiter</option>
+						<option value="adulto">Adulto</option>
+						<option value="jubilado">Jubilado</option>			 
+					</select>
+			<p class="aviso" id="aviso1"></p>
+		</fieldset>
+
+		<fieldset class="cuadro">
+			<legend id="leyenda"><b>Datos Personales</b></legend>
+
+				<table>
+					<tr>
+						<td>	
+				<label for="nombrek">Nombre</label> 
+					<input type="text" placeholder="Nombre" size="20" maxlength="33" id="nombrek" class="cuadro2"><br>
+					<p class="aviso" id="aviso2"></p>
+				<label for="apellidok">Apellido</label>
+					<input type="text" placeholder="Apellido" size="20" maxlength="33" id="apellidok" class="cuadro2"><br>
+					<p class="aviso" id="aviso3"></p>
+				<label for="dni">DNI</label>
+					<input type="text" placeholder="DNI" size="20" maxlength="9" id="dnik" class="cuadro2"><br>
+					<p class="aviso" id="aviso4"></p>
+				<label for="direccionk">Dirección</label>
+					<input type="text" placeholder="Domicilio" size="40" maxlength="33" id="direccionk" class="cuadro2"><br>
+					<p class="aviso" id="aviso5"></p>
+				<label for="Localidadk">Localidad</label>
+					<input type="text" placeholder="localidad" size="23" maxlength="23" id="localk" class="cuadro2"><br>
+					<p class="aviso" id="aviso6"></p>
+				<label for="emailk">Email</label>
+					<input type="text" placeholder="correo web" id="emailk" class="cuadro2"><br>
+					<p class="aviso" id="errorEmail"></p>
+
+				<label for="tuurl">Página Web.</label>
+					<input type="text" name="tuurl" placeholder="Introduce tu web" id="tuurl" class="cuadro2" size="40"><br>
+					<p class="aviso" id="aviso8"></p>
+
+				<label for="telefono">Teléfono</label>
+					<input type="tel" name="telefono" placeholder="teléfono" class="cuadro2" id="telef" maxlength="11"><br>
+					<p class="aviso" id="aviso9"></p>
+						</td>
+					</tr>
+				</table>	
+		</fieldset>
+
+
+		<fieldset id="botonera">
+			<input type="submit" class="botin" id="submit" value="Aupa Cultural" onclick="validaForm()">
+			<input type="reset" class="botin" id="reset" value="Limpiar datos"><br><br><br>	
+			<!-- <button onclick="validaContUrl()">valida URL</button>
+			<button onclick="validaTel()">valida TELEFONO</button> -->
+		</fieldset>	
+	</form>
+</aside>	
+
+<footer id="contacto2">
+	<p id="contacto2">Teléfono de contacto 987 858585</p>
+
+	<p id=contacto2>© 2018 My data. All rights reserved | Design by <a id="final">Jacinto González</a></p>	
+</footer>	
+
+
+
+	
+	
+</body>
+</html>
