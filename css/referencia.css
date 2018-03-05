@@ -1,0 +1,98 @@
+h1{color:#1F5416;
+	background: #F5E70E
+	margin: 15%;
+	padding:2%;
+	text-align: center;
+}
+h3{color:#241A06;}
+
+#ropa{
+	background-color: #000000;
+	color: #fff;
+	margin-right:75%;
+	text-align: center;
+}
+
+
+
+
+hr{color: #ff0000;
+	background: #F95B1D;
+	size: 5;
+	border:3px solid #000;
+}
+div[id='seleccione']{
+	background:#E8C3AD;
+	margin: 0% 55% 0% 0%;
+	/*margin-right:55%;
+	margin-left:0%;*/
+	padding:1%;
+	border:5px solid #2C3A8F;
+}
+
+div[id='marcas']{
+	background:#C176CC;
+	margin-right:55%;
+	padding:1%;
+	border:5px solid #087F27;
+}
+
+#sexo{
+	font-size: 15px;
+	color: #04B704;
+
+}
+fieldset[id=tallas]{
+	background:#E8C3AD;
+	size: 5;
+	border:5px solid #000;
+	padding:10px;
+	margin-right:55%;
+}
+
+#formulario,#formulario2{
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#estado1{border-bottom: 55px;
+	border-top-color: #FFFF00;
+}	
+
+#estado2{border-bottom: 55px;
+	border-top-color: #FFFF00;
+}	
+
+#consulta{background: #EEE084;
+	margin-right:55%;
+
+}
+
+#submit,#reset{border-bottom: 55px;
+	border-top-color: #FFFF00;
+	background: #000000;
+	color: #FFFEB0;
+}
+
+a {
+		color: blue;
+	}
+
+	a.whitewine {
+		color: #FFBB00;
+	}
+
+	a.redwine {
+		color: #800000;
+
+
+	}	
+	.ldefinicion{
+		background:#E8C3AD;
+	margin: 0% 55% 0% 0%;
+	/*margin-right:55%;
+	margin-left:0%;*/
+	padding:1%;
+	border:5px solid #2C3A8F;
+	}
