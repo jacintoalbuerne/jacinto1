@@ -44,7 +44,8 @@ function cambiarParrafo(parraf){
 		document.getElementById(parraf).innerHTML = "Introduzca una URL correcta";
 	if (parraf == "aviso9") 
 		document.getElementById(parraf).innerHTML = "Introduzca un número válido de teléfono";
-
+	if (parraf == "aviso10") 
+		document.getElementById(parraf).innerHTML = "Introduzca el código Postal";
 	//console.log("estoy en cambiar parrafo");
 };
 
@@ -230,6 +231,20 @@ function validaTel(telef){
 	}console.log("este es telef", textTelef, longTelef);
 };
 
+function validaCodP(codP){
+ 	var textTelef = document.getElementById("telef").value;
+ 	var longTelef = textTelef.length;
+ 	console.log("este es telef", textTelef, longTelef);
+ 	if(isNaN(textTelef) || longTelef <9){
+ 		limpiarParrafo("aviso9");
+		cambiarParrafo("aviso9");
+		return false;
+	}
+	else{
+		limpiarParrafo("aviso9");
+		return true;
+	}console.log("este es telef", textTelef, longTelef);
+};
 
 function validaForm(){
  	var nombrelong = document.getElementById("nombrek").value;
