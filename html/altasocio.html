@@ -92,8 +92,9 @@
 					<input type="text" placeholder="localidad" size="23" maxlength="23" id="localk" class="cuadro2"><br>
 					<p class="aviso" id="aviso6"></p>
 				<label for="codpostalk">Código Postal</label>
-					<input type="text" placeholder="código postal" size="5" maxlength="5" id="codpostalk" class="cuadro2"><br>
+					<input type="text" placeholder="código postal" size="15" maxlength="5" id="codpostalk" class="cuadro2"><br>
 					<p class="aviso" id="aviso10"></p>
+
 
 				<label for="emailk">Email</label>
 					<input type="text" placeholder="correo web" id="emailk" class="cuadro2"><br>
@@ -115,8 +116,13 @@
 		<fieldset id="botonera">
 			<input type="submit" class="botin" id="submit" value="Aupa Cultural" onclick="validaForm()">
 			<input type="reset" class="botin" id="reset" value="Limpiar datos"><br><br><br>	
+
 			<!-- <button onclick="validaContUrl()">valida URL</button>
 			<button onclick="validaTel()">valida TELEFONO</button> -->
+
+			<button onclick="validaContUrl()">valida URL</button>
+			<button onclick="validaCodP()">valida CODPOSTAL</button>
+
 		</fieldset>	
 	</form>
 </aside>	

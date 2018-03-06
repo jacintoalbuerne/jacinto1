@@ -45,7 +45,8 @@ function cambiarParrafo(parraf){
 	if (parraf == "aviso9") 
 		document.getElementById(parraf).innerHTML = "Introduzca un número válido de teléfono";
 	if (parraf == "aviso10") 
-		document.getElementById(parraf).innerHTML = "Introduzca el código Postal";
+		document.getElementById(parraf).innerHTML = "Introduzca un Código Postal de 5 cifras";
+
 	//console.log("estoy en cambiar parrafo");
 };
 
@@ -231,6 +232,7 @@ function validaTel(telef){
 	}console.log("este es telef", textTelef, longTelef);
 };
 
+<<<<<<< HEAD
 function validaCodP(codP){
  	var textTelef = document.getElementById("telef").value;
  	var longTelef = textTelef.length;
@@ -245,6 +247,25 @@ function validaCodP(codP){
 		return true;
 	}console.log("este es telef", textTelef, longTelef);
 };
+
+
+function validaCodP(codp){
+ 	var textCodPost = document.getElementById("codpostalk").value;
+ 	var longCodPost = textCodPost.length;
+ 	console.log("este es CodPost", textCodPost, longCodPost);
+ 	if(isNaN(textCodPost) || longCodPost <5){
+ 		limpiarParrafo("aviso10");
+		cambiarParrafo("aviso10");
+		return false;
+	}
+	else{
+		limpiarParrafo("aviso10");
+		return true;
+	}
+	console.log("este es CodPost", textCodPost, longCodPost);
+	console.log("he validado codigo postal");
+};
+
 
 function validaForm(){
  	var nombrelong = document.getElementById("nombrek").value;
@@ -262,6 +283,10 @@ function validaForm(){
 	var index = textUrl.match("http");
 	var index1 = textUrl.match("//");
 	var index2 = textUrl.match("www.");
+
+	var textCodPost = document.getElementById("codpostalk").value;
+ 	var longCodPost = textCodPost.length;
+
  	if (!validarRadio()) return false;
  		console.log("has validado ABONO");
  	if (!validaPregunta(lista)) return false;
@@ -295,6 +320,11 @@ function validaForm(){
  		console.log("has validado arroba");
  	if (!validaPunto(textEmail)) return false;
  		console.log("has validado punto");
+
+
+ 	if (!validaCodP(textCodPost))return false;	
+ 		console.log("he validado codigo postal");
+
  	if (!validaLongUrl(tuurl)){
  		cambiarParrafo("aviso8");
  		return false;
@@ -308,9 +338,10 @@ function validaForm(){
  		cambiarParrafo("aviso8");
  		return false;
  	} 
- 	
- 		console.log("has validado contenido de URL");		
  		 
+
+ 	 	console.log("has validado contenido de URL");
+
 
  	if (!validaTel(telef)){ 
  		limpiarParrafo("aviso9");
@@ -319,10 +350,17 @@ function validaForm(){
 	}
 	else{
  		limpiarParrafo("aviso9");
+
  		return true;
  	} 
 
- 		console.log("has validado telefono");
- 	alert("Enhorabuena, ha rellenado el formulario correctamente");
+
+
+
+ 		// console.log("has validado telefono");	 
+ 
+ 		
+		return true;
+} 
 
 };
