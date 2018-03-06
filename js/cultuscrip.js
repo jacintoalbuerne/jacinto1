@@ -232,7 +232,6 @@ function validaTel(telef){
 	}console.log("este es telef", textTelef, longTelef);
 };
 
-<<<<<<< HEAD
 function validaCodP(codP){
  	var textTelef = document.getElementById("telef").value;
  	var longTelef = textTelef.length;
@@ -339,7 +338,6 @@ function validaForm(){
  		return false;
  	} 
  		 
-
  	 	console.log("has validado contenido de URL");
 
 
@@ -353,14 +351,6 @@ function validaForm(){
 
  		return true;
  	} 
-
-
-
-
  		// console.log("has validado telefono");	 
- 
- 		
-		return true;
-} 
-
+  				
 };
